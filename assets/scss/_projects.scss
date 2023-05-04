@@ -1,0 +1,131 @@
+#s-projects {
+  @include spacing-section;
+  text-align: center;
+  background-color: $bg-secondary;
+  .grid-layout {
+    h2 {
+      @include title-section();
+      span {
+        color: $color-main;
+      }
+    }
+    #projects {
+      margin: $gap-3 0px;
+      @include flexbox-between;
+      text-align: left;
+      .playanimes {
+        border: 1px solid #ffffff;
+        &:hover {
+          border: 1px solid #ffffff;
+        }
+      }
+     
+      .nwtelecom {
+        border: 1px solid #a5d051;
+        &:hover {
+          border: 1px solid #a5d051;
+        }
+      }
+
+      .speak {
+        border: 1px solid #00a3ff;
+        &:hover {
+          border: 1px solid #00a3ff;
+        }
+      }
+      .jucawiki {
+        border: 1px solid #f06548;
+        &:hover {
+          border: 1px solid #f06548;
+        }
+      }
+      .jucagames {
+        border: 1px solid #ff2c54;
+        &:hover {
+          border: 1px solid #ff2c54;
+        }
+      }
+
+      > article {
+        background-color: $bg-main;
+
+        @include block-article;
+        min-height: 275px;
+        h3 {
+          color: $color-white;
+          font: {
+            size: 2.4rem;
+            weight: 500;
+          }
+        }
+        p {
+          line-height: $gap-3;
+          margin: $gap-3 $gap-0;
+          color: $color-gray;
+          line-height: 3.2rem;
+          font: {
+            size: 1.8rem;
+          }
+        }
+      }
+    }
+    #playanimes {
+      color: #ffffff;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #17161d 100%);
+      }
+    }
+    #nwtelecom {
+      color: #a5d051;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #a5d051 100%);
+      }
+    }
+    #speak {
+      color: #00a3ff;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #00a3ff 100%);
+      }
+    }
+    // #f06548
+    #jucawiki {
+      color: #f06548;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #f06548 100%);
+      }
+    }
+    #jucagames {
+      color: #ff2c54;
+      &::after {
+        background: linear-gradient(270deg, #ffffff 0%, #ff2c54 100%);
+      }
+    }
+
+    
+    a {
+      color: $color-main;
+      position: relative;
+      @include hover-link();
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+
+        transform-origin: bottom right;
+        transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      font: {
+        size: 1.8rem;
+        weight: 400;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+}

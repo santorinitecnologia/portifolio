@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family:$font-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $background-color;
+    max-width: 1260px;
+    margin: 0 auto;
+    color: $white;
+    padding: 1rem;
+}

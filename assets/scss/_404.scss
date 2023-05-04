@@ -1,0 +1,43 @@
+.bg-404{
+    background-color: #080c13;
+  }
+  
+  #s-404 {
+    padding: 96px 48px;
+    background-color: #080c13;
+  }
+  .error h1{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Saira";
+  }
+  
+  .error h1 span {
+    color: #00a3ff;
+    font-size: 4.8rem;
+  }
+  
+  .error a {
+    background: #00a3ff;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding: 20px 32px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+  }
+  
+  .error a:hover {
+    color: #fff;
+    background-color: transparent;
+    border-style:solid;
+    border-color: #fff;
+  }
+  
